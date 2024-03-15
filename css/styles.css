@@ -579,7 +579,7 @@ a {
 .proj-item {
   width: 370px;
 }
-.proj-item > .link:hover .overlay {
+.proj-item > .link:hover .proj-overlay {
   transform: translateY(0);
 }
 .proj-item > .link {
@@ -590,7 +590,7 @@ a {
   position: relative;
   overflow: hidden;
 }
-.proj-item > .link .overlay {
+.proj-item > .link .proj-overlay {
   position: absolute;
   top: 0;
   left: 0;
