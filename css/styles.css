@@ -216,9 +216,9 @@ a {
 .adv-item {
   max-width: 270px;
 }
-.adv-item:last-child {
+/* .adv-item:last-child {
   margin-right: 0;
-}
+} */
 
 .adv-icon-container {
   display: flex;
@@ -463,7 +463,7 @@ a {
 .footer-contact {
   color: var(--footer-sec-text-color);
 }
-.addr .item:not(:last-child) {
+.footer-address:not(:last-child) {
   margin-bottom: 9px;
 }
 

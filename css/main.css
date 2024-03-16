@@ -1,0 +1,496 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+  background-color: #fff;
+  color: #212121;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.semantic-list {
+  list-style: none;
+}
+
+.btn-undecor {
+  border: none;
+}
+
+.link-undecor {
+  text-decoration: none;
+}
+
+.client-title, .team-title, .gallery-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.logo {
+  margin-right: 93px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000;
+}
+
+.logo-blue {
+  color: #2196f3;
+}
+
+.active, .navbar-contact:hover .nav-icon, .navbar-contact:focus .nav-icon, .navbar-link:hover, .navbar-link:focus {
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #2196f3;
+  fill: currentColor;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+}
+
+.navbar-link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.navbar-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+}
+.navbar-contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #757575;
+}
+.nav-icon {
+  display: inline-block;
+  fill: currentColor;
+}
+
+.hero-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #2f303a;
+}
+
+.hero-overlay {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-hero-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.06em;
+}
+
+.hero-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.advantages {
+  display: flex;
+  gap: 30px;
+}
+
+.adv-item {
+  max-width: 270px;
+}
+
+.adv-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+
+.adv-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.adv-title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.adv-descript {
+  line-height: 1.71;
+  color: #757575;
+}
+
+.gallery {
+  padding-top: 0;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.gallery-img {
+  position: relative;
+}
+
+.gallery-img-title-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.gallery-img-title {
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.memb {
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.memb-sign-container {
+  padding: 30px 32px;
+}
+
+.memb-name {
+  margin-bottom: 10px;
+  line-height: 1.19;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.memb-position {
+  margin-bottom: 16px;
+  color: #757575;
+  line-height: 1.19;
+  font-size: 16px;
+}
+
+.memb-net-container {
+  display: flex;
+  gap: 10px;
+}
+
+.net-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.net-icon-container:hover, .net-icon-container:focus {
+  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #2196f3;
+}
+.net-icon-container:focus .net-icon, .net-icon-container:hover .net-icon {
+  fill: #fff;
+}
+
+.net-icon {
+  height: 20px;
+  width: 20px;
+  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #afb1b8;
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cli-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1), border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cli-logo-container:hover, .cli-logo-container:focus {
+  fill: #2196f3;
+  border-color: #2196f3;
+}
+
+.cli-icon {
+  height: 60px;
+  width: 106px;
+}
+
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-right: 0;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.adress {
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.footer-address {
+  color: #fff;
+}
+.footer-address:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-contact {
+  color: #fff;
+}
+
+.footer-join {
+  margin-left: 93px;
+}
+
+.footer-join-title {
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.footer-net-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-net-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+}
+.footer-net-icon-container:hover, .footer-net-icon-container:focus {
+  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #2196f3;
+}
+
+.footer-net-icon {
+  height: 20px;
+  width: 20px;
+  fill: #fff;
+}
+
+.footer-mailing {
+  margin-left: 93px;
+}
+
+.footer-form-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  cursor: default;
+}
+
+.footer-form-input-wrapper {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.footer-form-input {
+  height: 50px;
+  width: 358px;
+  padding: 15px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #2f303a;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+.footer-form-input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 20px;
+}
+.footer-form-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 20px;
+}
+.footer-form-input:hover, .footer-form-input:focus {
+  border-color: #2196f3;
+  outline: none;
+}
+
+.footer-submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 28px;
+  border-radius: 4px;
+  min-width: 160px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.footer-submit-icon {
+  fill: #fff;
+}/*# sourceMappingURL=main.css.map */
